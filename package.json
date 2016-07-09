@@ -1,0 +1,26 @@
+{
+    "name": "ici",
+    "displayName": "ICI Language Extension",
+    "description": "Language support for the ICI programming language: http://atrn.org/ici",
+    "version": "0.0.1",
+    "publisher": "EdmundKapusniak",
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "ici",
+            "aliases": ["ICI", "ici"],
+            "extensions": [".ici"],
+            "configuration": "./ici.configuration.json"
+        }],
+        "grammars": [{
+            "language": "ici",
+            "scopeName": "source.ici",
+            "path": "./syntaxes/ici.tmLanguage"
+        }]
+    }
+}
